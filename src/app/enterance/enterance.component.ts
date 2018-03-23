@@ -11,5 +11,4 @@ export class EnteranceComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

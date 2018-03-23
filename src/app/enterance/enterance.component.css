@@ -12,11 +12,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.caption{
+.caption{ 
     position: absolute;
-    left: 0;
-    top: 50%;
+    right: 25px;
+    top: 4%;
     width: 100%;
-    text-align: center;
-    color: #000;
+    text-align: right;
 }
+.caption>button{
+    cursor: pointer;
+}
+
+
+
+
