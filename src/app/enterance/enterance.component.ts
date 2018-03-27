@@ -11,4 +11,7 @@ export class EnteranceComponent implements OnInit {
 
   ngOnInit() {
   }
+  onLogging() {
+    console.log(this)
+  }
 }

@@ -15,10 +15,15 @@
               </div>
               <div class="modal-body">
                   <div id="logintemplate">
-            <form method="get" action="/">
-                <label>Username</label> <input type="text" value="" name="username">
-                <label>Password</label> <input type="password" value="" name="passwprd">
-                <input type="button" (click)="onSelect(hero)" value ="submit">
+            <form [formGroup]="form">
+                <label>Username</label> <input type="text" value="" name="username" [(ngModel)]="model.username" formControlName="username" required>
+<!--
+                <span *ngIf="isFieldInvalid('username')">
+                    Please inform your user name
+                </span>
+-->
+                <label>Password</label> <input type="password" value="" name="password" [(ngModel)]="model.password">
+                <input type="button" (click)="onLogging()" value ="submit">
             </form>
         </div>
               </div>
