@@ -1,10 +1,12 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EnteranceComponent }  from './enterance/enterance.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: 'dashboard', component: EnteranceComponent }
+  { path: 'login', component: EnteranceComponent },
+  { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
