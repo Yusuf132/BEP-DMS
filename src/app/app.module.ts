@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { EnteranceComponent } from './enterance/enterance.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpModule } from '@angular/http';
+
 
 
 @NgModule({
@@ -16,8 +19,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     ReactiveFormsModule ,
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   HttpModule
+                        
   ],
   providers: [],
   bootstrap: [AppComponent]
